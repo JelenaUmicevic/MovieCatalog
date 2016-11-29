@@ -6,7 +6,29 @@
         xmlns:local="clr-namespace:MovieCatlog"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.508,0.365">
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="25" Margin="111,127,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.79"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="151" Margin="264,56,0,0" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.121"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.734"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="32" Margin="29,61,0,0" VerticalAlignment="Top" Width="95"/>
+        <Calendar HorizontalAlignment="Left" Height="31" Margin="59,185,0,0" VerticalAlignment="Top" Width="170"/>
+
     </Grid>
 </Window>
